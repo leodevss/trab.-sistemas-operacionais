@@ -7,8 +7,6 @@ struct Processo {
     int ppid; // processo pai
     string nome;
 };
-
-// Função recursiva para imprimir árvore
 void mostrar_arvore(const vector<Processo>& processos, int ppid, int nivel) {
     for (const auto& p : processos) {
         if (p.ppid == ppid) {
