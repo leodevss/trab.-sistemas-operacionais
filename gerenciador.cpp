@@ -4,7 +4,7 @@
 #include <string>
 #include <sstream>
 #include <cctype>
-#include <unistd.h> // para usleep
+#include <unistd.h> 
 
 using namespace std;
 
