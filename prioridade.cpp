@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <unistd.h> // sleep
+#include <unistd.h> 
 using namespace std;
 
 struct Processo {
@@ -18,7 +18,6 @@ struct Processo {
     }
 };
 
-// Função para ordenar por prioridade (menor número = maior prioridade)
 bool compararPrioridade(Processo a, Processo b) {
     return a.prioridade < b.prioridade;
 }
@@ -26,14 +25,12 @@ bool compararPrioridade(Processo a, Processo b) {
 int main() {
     vector<Processo> processos;
 
-    // Criando processos com prioridades diferentes
     processos.push_back(Processo(1, "Editor", 5, 3));
     processos.push_back(Processo(2, "Navegador", 4, 1));
     processos.push_back(Processo(3, "Terminal", 3, 2));
 
     cout << "\n--- SIMULADOR POR PRIORIDADE ---\n" << endl;
 
-    // Ordena os processos por prioridade
     sort(processos.begin(), processos.end(), compararPrioridade);
 
     for (auto& p : processos) {
