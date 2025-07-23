@@ -1,9 +1,8 @@
 #include <iostream>
 #include <queue>
-#include <unistd.h> // Para usar sleep no Linux
+#include <unistd.h> 
 using namespace std;
 
-// Estrutura que representa um processo
 struct Processo {
     int pid;
     string nome;
@@ -24,7 +23,7 @@ int main() {
     fila.push(Processo(2, "Navegador Web", 7));
     fila.push(Processo(3, "Terminal", 4));
 
-    int quantum = 2; // Tempo máximo que cada processo pode executar por vez
+    int quantum = 2; 
 
     cout << "\n--- SIMULADOR ROUND ROBIN ---\n" << endl;
 
@@ -34,7 +33,7 @@ int main() {
 
         cout << "Executando: " << atual.nome << " (PID: " << atual.pid << ")" << endl;
 
-        // Simula execução por quantum
+    
         int tempo_exec = min(quantum, atual.tempo_restante);
         sleep(tempo_exec); // pausa para simular execução
         atual.tempo_restante -= tempo_exec;
@@ -47,7 +46,7 @@ int main() {
             cout << "✅ Processo " << atual.nome << " finalizado.\n" << endl;
         }
 
-        sleep(1); // pequena pausa entre ciclos
+        sleep(1); 
     }
 
     cout << "✅ Todos os processos foram concluídos com sucesso!\n" << endl;
