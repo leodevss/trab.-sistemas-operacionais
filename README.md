@@ -11,6 +11,10 @@ nano spooler.cpp
 g++ spooler.cpp -o spooler -pthread
 ./spooler
  ------------------------------------
+nano simulador_cpu.cpp
+ g++ simulador_cpu.cpp -o simulador_cpu -pthread
+./simulador_cpu
+
 
  
 
