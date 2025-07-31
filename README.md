@@ -5,12 +5,12 @@ nano mini_shell.cpp - cria o arquivo vai abrir a tela, cola o codigo ctrl+o = sa
 g++ mini_shell.cpp -o mini_shell -std=c++17 
 ./mini_shell roda o codigo
 
------------------------------------
+
 segue os mesmos passos do mini shell
 nano spooler.cpp
 g++ spooler.cpp -o spooler -pthread
-./spooler
- ------------------------------------
+./spooler 
+
 nano simulador_cpu.cpp
  g++ simulador_cpu.cpp -o simulador_cpu -pthread
 ./simulador_cpu
