@@ -1,7 +1,7 @@
 # Projeto: Sistemas Operacionais
 
 
-Este repositório contém códigos desenvolvidos para a disciplina de Sistemas Operacionais. Os programas foram testados e executados no sistema Xubuntu.
+Este repositório contém códigos desenvolvidos para a disciplina de Sistemas Operacionais. Os programas foram testados e executados no sistema Xubuntu, foi utilizado c++ para a realização da atividade.
 
 
 
@@ -15,10 +15,10 @@ Como rodar os códigos
  Mini Shell
 
 
-1. Crie o arquivo com o código:
+1. Crie o arquivo com o código::
 
 
-nano mini_shell.cpp
+nano mini_shell.cpp 
 
 
 
