@@ -1,4 +1,4 @@
-# Projeto: Sistemas Operacionais
+# Atividade: Sistemas Operacionais
 
 
 Este repositório contém códigos desenvolvidos para a disciplina de Sistemas Operacionais. Os programas foram testados e executados no sistema Xubuntu, foi utilizado c++ para a realização da atividade.
